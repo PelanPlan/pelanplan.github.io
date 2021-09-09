@@ -1,105 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Ku Amirul - freelance web developer</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <!-- <nav class="white" role="navigation"> -->
+    <!-- <div class="nav-wrapper container"> -->
+      <!-- <a id="logo-container" href="#" class="brand-logo">Logo</a> -->
+      <!-- <ul class="right hide-on-med-and-down"> -->
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+      <!-- </ul> -->
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>My Portfolio</h1>      
-    <p>Some text that represents "Me"...</p>
-  </div>
-</div>
+      <!-- <ul id="nav-mobile" class="sidenav"> -->
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+      <!-- </ul> -->
+      <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    <!-- </div> -->
+  <!-- </nav> -->
   
-<div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+<!-- START NAVBAR -->
+	<div class="navbar-fixed">
+		<nav class="black" role="navigation">
+			<div class="nav-wrapper container">
+
+					<a href="#" class="brand-logo"></a>
+					<ul class="right hide-on-med-and-down" id="navList">
+						<li><a href="#landing">Home</a></li>
+						<li><a href="#intro">About Me</a></li>
+						<li><a href="#project">Projects</a></li>
+						<li><a href="#contact">Get In Touch</a></li>
+					</ul>
+
+			</div>			
+			      <ul id="nav-mobile" class="sidenav">
+						<li><a href="#landing">Home</a></li>
+						<li><a href="#intro">About</a></li>
+						<li><a href="#project">Projects</a></li>
+						<li><a href="#contact">Contact Me</a></li>
+				  </ul>
+				  <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		</nav>
+	</div>
+<!-- END NAVBAR --> 
+  
+	<!-- Landing Screen -->
+	<div class="section white-text" id="landing">
+			<h2 id="mainText" class="center"><b>Hello, I'm Ku Amirul,</b></h2>
+			<h3  class="center">
+				a freelance web developer.
+			</h3>
+			<!-- <h6 id="mainText" class="center">A Web Developer</h6> -->
+			<div class="row center">
+			  <a href="#project" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">View Projects</a>
+			</div>
+	</div>
+	
+	<!-- START Fixed Action Button -->
+	<div class="fixed-action-btn">
+	  <a class="btn-floating btn-large red">
+		<i class="large material-icons">mode_edit</i>
+	  </a>
+	  <ul>
+			<li><a class="btn-floating blue-grey lighten-1" href="https://linkedin.com/in/kuamirulasyraf/"><i class="fa fa-linkedin"></i></a></li>
+			<li><a class="btn-floating grey darken-3" href="https://github.com/kuamirul"> <i class="fa fa-github"></i></a></li>
+			<li><a class="btn-floating  blue darken-4" href="https://www.facebook.com/kuamirul.asyraf"><i class="fa fa-facebook"></i></a></li>
+			<li><a class="btn-floating cyan lighten-1" href="https://twitter.com/kuAmirul_"><i class="fa fa-twitter"></i></a></li>							
+	  </ul>
+	</div>
+	<!-- END Fixed Action Button -->
+	
+	<!-- Intro and service -->
+	<div id="intro" class="section black white-text">
+		<div class="container">
+			<!-- <div class="row"> -->
+				<!-- <div  class="col s12"> -->
+					<!-- <h2 class="center header"> "If you love life, don't waste time, for time is what life is made up of"</h2> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<div class="row">
+				<h3 class="center white-text"> About Me </h3>
+			</div>
+			<div class="row center">
+				<div class="col s12 m12 l4">
+					<img class="circle responsive-img" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/profile.jpg">
+				</div>
+				<div class="col s12 m12 offset-l1 l7 ">
+					<!-- <h5 class="center">Ku Amirul Asyraf</h5> -->
+					<p  class="flow-text" style="text-align: justify;text-justify: inter-word;">
+					I'm a web developer from Perlis, Malaysia. <br>
+					I'm passionate about building websites that benefits the lives of others. 
+					I'm a believer in lifelong learning, hence I am open to learning and keeping up to date with latest technological trends and methods. <br>
+						<!-- <i>“Content Quote” </i>  -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<!-- Skill Sets -->
+	<div class="section" style="background-color: #101010;" id="skillsets">
+		<div class="container">
+			<div class="row">
+				<h5 class="center white-text">I have worked on multiple projects using:</h5>
+			</div>
+			<div class="row center">
+					  <div class="col s4 m4 l2">
+						<img class="circle responsive-img" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png">
+					  </div>
+				      <div class="col s4 m4 l2">
+						<img class="responsive-img" src="https://s.w.org/style/images/about/WordPress-logotype-wmark.png">
+					  </div>		
+					  <div class="col s4 m4 l2">
+						<img class="responsive-img" src="https://cdn.worldvectorlogo.com/logos/php-1.svg">
+					  </div>					  
+					  <div class="col s4 m4 l2">
+						<img class="responsive-img" src="https://cdn.worldvectorlogo.com/logos/mysql.svg">
+					  </div>
+					  <div class="col s4 m4 l2">
+						<img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/1280px-Spring_Framework_Logo_2018.svg.png">					  
+					  </div>
+					  <!--div class="col s4 m4 l2">
+						<img class="responsive-img" src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png">
+					  </div-->
+				</div>
+		</div>
+	</div>
+	
+ 
+<!-- START PROJECT CARD -->
+	<div class="section black" id="project">
+    <div class="row">
+		<div class="row">
+			<h3 class="center white-text"> Projects </h3>
+		</div>
+       <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/1ulibrary.png">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">uLibrary UTP<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-action">
+             <a href="https://ulibrary.utp.edu.my">Visit Page</a>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">uLibrary UTP<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+       </div>
+	   <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/2gateway.png">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">UTP Research Gateway<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-action">
+             <a href="https://gateway.utp.edu.my">Visit Page</a>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">UTP Research Gateway<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+       </div>
+	   <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/3autonomous.png">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">UTP Autonomous Research Institute<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-action">
+             <a href="https://gateway.utp.edu.my/autonomous/">Visit Page</a>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">UTP Autonomous Research Institute<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+       </div>	
     </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+
+    <div class="row">
+       <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/4sustainable.png">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">UTP Sustainable Research Institute<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-action">
+             <a href="https://gateway.utp.edu.my/sustainable/">Visit Page</a>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">UTP Sustainable Research Institute<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+       </div>
+	   <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/5transport.png">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">UTP Transport Research Institute<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-action">
+             <a href="https://gateway.utp.edu.my/transport/">Visit Page</a>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">UTP Transport Research Institute<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+       </div>
+	   <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/6contaminant.png">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">UTP Contaminant Research Institute<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-action">
+             <a href="https://gateway.utp.edu.my/contaminant/">Visit Page</a>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">UTP Contaminant Research Institute<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+       </div>		
     </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+
+    <div class="row">
+       <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/7hydro.png">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">UTP Hydrocarbon Research Institute<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-action">
+             <a href="https://gateway.utp.edu.my/hydrocarbon/">Visit Page</a>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">UTP Hydrocarbon Research Institute<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+       </div>
+	   <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/8health.png">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">UTP Health Research Institute<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-action">
+             <a href="https://gateway.utp.edu.my/health/">Visit Page</a>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">UTP Health Research Institute<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+       </div>
+	   <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/9petroleum.png">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">UTP Petroleum Research Institute<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-action">
+             <a href="https://gateway.utp.edu.my/petroleum/">Visit Page</a>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">UTP Petroleum Research Institute<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+       </div>		
     </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+	</div>
+<!-- END PROJECT CARD --> 
+ 
+<!-- START CONTACT -->  
+  <div class="section" style="background-color: #101010;" id="contact">
+	<div class="container" >
+      <div class="row">
+        <div class="col s12 center white-text">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+			<div class="row">
+            <h4 class="white-text">Get In Touch</h4>
+		    </div>
+			<div class="row">
+		  	<div style="font-size: 50px; color: #fff;">
+			<a href="https://linkedin.com/in/kuamirulasyraf/"><i class="fa fa-linkedin fa-10x fa-border"></i></a>
+			<a href="https://github.com/kuamirul"><i class="fa fa-github-square fa-7x fa-border"></i></a>
+			<a href="https://www.facebook.com/kuamirul.asyraf"><i class="fa fa-facebook-square fa-7x fa-border"></i></a>
+			<a href="https://twitter.com/kuAmirul_"><i class="fa fa-twitter-square fa-7x fa-border"></i></a>
+			</div>
+			</div>
+			
+        </div>
+      </div>
     </div>
   </div>
-</div><br>
+<!-- END CONTACT --> 
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+<!-- START FOOTER --> 
+  <footer class="page-footer teal">
+    <!-- <div class="container"> -->
+      <!-- <div class="row"> -->
+        <!-- <div class="col l6 s12"> -->
+          <!-- <h5 class="white-text">Company Bio</h5> -->
+          <!-- <p class="grey-text text-lighten-4">Content</p> -->
+        <!-- </div> -->
+        <!-- <div class="col l3 s12"> -->
+          <!-- <h5 class="white-text">Settings</h5> -->
+          <!-- <ul> -->
+            <!-- <li><a class="white-text" href="#!">Link 1</a></li> -->
+          <!-- </ul> -->
+        <!-- </div> -->
+        <!-- <div class="col l3 s12"> -->
+          <!-- <h5 class="white-text">Connect</h5> -->
+          <!-- <ul> -->
+            <!-- <li><a class="white-text" href="#!">Link 1</a></li> -->
+          <!-- </ul> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+    <div class="footer-copyright">
+      <div class="container">
+      Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
     </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
+  </footer>
+<!-- END FOOTER --> 
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+	  $(document).ready(function(){
+		$('.fixed-action-btn').floatingActionButton();
+	  });
+	  
+	  
+	  
+	  (function ($) {
+  $(document).ready(function() {
 
-</body>
+    $(document).on('click.card', '.card', function (e) {
+      if ($(this).find('> .card-reveal').length) {
+        if ($(e.target).is($('.card-reveal .card-title')) || $(e.target).is($('.card-reveal .card-title i'))) {
+          // Make Reveal animate down and display none
+          $(this).find('.card-reveal').velocity(
+            {translateY: 0}, {
+              duration: 225,
+              queue: false,
+              easing: 'easeInOutQuad',
+              complete: function() { $(this).css({ display: 'none'}); }
+            }
+          );
+          $(this).find('.card-content>span').attr('style', '');
+        }
+        else if ($(e.target).is($('.card .activator')) ||
+                 $(e.target).is($('.card .activator i')) ) {
+          $(e.target).closest('.card').css('overflow', 'hidden');
+          $(this).find('.card-reveal').css({ display: 'block'}).velocity("stop", false).velocity({translateY: '-100%'}, {duration: 300, queue: false, easing: 'easeInOutQuad'});
+          $(this).find('.card-content>span').attr('style', 'color: rgba(0,0,0,0) !important');
+        }
+      }
+
+      $('.card-reveal').closest('.card').css('overflow', 'hidden');
+
+    });
+
+     // Make Reveal animate up and display when mouseenter
+    $(document).on('mouseenter.hover-reveal','.hover-reveal', function (e){
+      $(e.target).closest('.card').css('overflow', 'hidden');
+      $(this).find('.card-content>span').attr('style', 'color: rgba(0,0,0,0) !important');
+      $(this).find('.card-reveal').css({ display: 'block'})
+        .velocity("stop", false)
+        .velocity({translateY: '-100%'},
+        {duration: 300,
+         queue: false,
+         easing: 'easeInOutQuad'});
+    });
+
+    // Make Reveal animate down and display none when mouseleave
+    $(document).on('mouseleave.hover-reveal','.hover-reveal', function (e){
+      $(this).find('.card-reveal').velocity(
+        {translateY: 0}, {
+          duration: 225,
+          queue: false,
+          easing: 'easeInOutQuad',
+          complete: function() { $(this).css({ display: 'none'}); }
+        }
+      );
+      $(this).find('.card-content>span').attr('style', '');
+    });
+
+  });
+}( jQuery ));
+
+    (function($){
+	  $(function(){
+
+		$('.sidenav').sidenav();
+		$('.parallax').parallax();
+
+	  }); // end of document ready
+	})(jQuery); // end of jQuery name space
+   
+	  
+  </script>
+
+  </body>
 </html>

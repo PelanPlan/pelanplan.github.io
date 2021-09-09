@@ -1,0 +1,101 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+
+#landing{
+    height: 100vh;
+    background-image: url('https://raw.githubusercontent.com/kuamirul/kuamirul.github.io/master/images/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+#mainText{
+    margin-top: 30vh;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+    /* background-color: black; */
+    /* color: rgba(255,255,255,0.8); */
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+/* CARD */
+.card-reveal{
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.7) !important;
+}
+div.card-reveal span.card-title{
+  color: #ffffff !important;
+}
+.tabs{
+  background-color: transparent;
+}
+td, th{
+  padding: 5px 5px !important;
+}
+table.highlight>tbody>tr:hover{
+  background-color: rgba(238,110,115,0.6);
+}
+input[type=search]:focus{
+  border-bottom: 1px solid #ee6e73 !important;
+  box-shadow: 0 1px 0 0 #ee6e73 !important;
+}
